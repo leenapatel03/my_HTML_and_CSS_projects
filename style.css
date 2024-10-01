@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple500: rgb(57, 36, 107);  /* making variables in css for different colors or other things  */
+    --purple400: rgb(16, 9, 43);
+    --white_com: white;
+}
+
+html,
+body{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin: 50px;
+}
+
+header{
+    height: 60px;
+    background-color: var(--purple500);
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgb(34, 19, 71);
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 50px;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.features{
+    display: flex;
+    gap: 30px;
+}
+.features a{
+    color: white;
+    text-decoration: none;
+    transform: 0.3s ease-in;
+}
+
+.features a:hover{
+    text-decoration: 1px solid white underline;
+    transform: 0.3s ease-in;
+}
+
+.hero{
+    background: url(./assets/hero_image.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 20px;
+    color: var(--white_com);
+    padding: 0px 100px ;
+}
+
+.content{
+    display: grid;
+    gap: 30px;
+}
+
+.content h1{
+    font-size: 100px;
+    transition: 0.5s;
+}
+
+.content h3{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.content h1:hover{
+    transform: scale(1.14);
+    cursor: normal;
+    transition: 0.5s ease-in-out;
+}
+
+.middle{
+    background-color: var(--purple400);
+    padding-top: 10px;
+}
+
+.trail{
+    font-size: 20px;
+    color: var(--white_com);
+    padding: 5px 10px;
+    background-color: red;
+    border: 1.5px solid white ;
+}
+
+.trail:hover{
+    transform: scale(1.05);
+    background-color: floralwhite;
+    color: black;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.small{
+    font-size: 10px;
+}
+
+.ipad_iphone{
+    /* margin-top: 20px; */
+    /* height: 300px; */
+    margin-top: -380px;
+    top: 400px;
+    position: relative;
+}
+
+.third{
+    margin-top: 430px;
+    color: black;
+}
+
+.mid_para{
+    font-size: 18px;
+}
+
+.white_button{
+    background-color: var(--purple400);
+    font-size: 20px;
+    width: fit-content;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 3px 4px 3px rgba(28, 18, 68, 0.676) ;
+    margin-bottom: 20px;
+}
+
+.white_button:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.video_section{
+    margin-top: 20px;
+    position: relative;
+}
+
+.video_section .content{
+    color: var(--white_com);
+    display: grid;
+    place-items: center;
+    margin-top: 200px;
+    gap: 20px;
+    position: absolute;
+    z-index: 40;
+}
+
+.video{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+}
+
+.gift_card{
+    color: black;
+    margin-top: 1130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.photo{
+    height: 400px;
+    width: 500px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.text{
+    display: grid;
+    gap: 20px;
+    text-align: left;
+}
+
+.fourth{
+    background-color: var(--purple400);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: left;
+    padding: 50px 150px ;
+}
+
+.fourth h3{
+   margin-bottom: 5px;
+}
+
+.fourth ul{
+    margin-top: 5px;
+    list-style: none;
+    font-size: 18px;
+}
+
+footer{
+    background-color: var(--purple500);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
